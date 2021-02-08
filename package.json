@@ -8,7 +8,8 @@
     "lint": "ng lint --force",
     "e2e": "ng e2e",
     "cypress": "npx cypress open",
-    "lighthouse": "lhci collect --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' --url=https://www.solvd.com"
+    "lighthouse": "lhci collect --output-path=./lighthouse-report.html --quiet --chrome-flags='--headless' --url=https://www.solvd.com",
+    "end-to-end": "npx cypress run --spec 'cypress/integration/lighthouse.spec.js'"
   },
   "pre-commit": [
     "lint"
