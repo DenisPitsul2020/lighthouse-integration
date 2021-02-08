@@ -7,7 +7,7 @@ This module contains with 3 part. It is a native JS solution, so that it was wri
 
 All needed data presents in [testdata.json](cypress/fixtures/testdata.json)
 
-To run this project, install it locally using npm and run:
+To run this project, install it locally using npm and run suite:
 
 ```
 npm install
