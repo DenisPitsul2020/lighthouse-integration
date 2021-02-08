@@ -1,0 +1,10 @@
+{
+  "url": "https://www.google.com",
+  "reportPath": "lhreport.html",
+  "zipPath": "lhreport.zip",
+  "senderEmail": "tt2857506@gmail.com",
+  "senderPassword": "testtest2857506",
+  "receiverEmail": "dpitsul@solvd.com",
+  "subject": "lighthouse",
+  "text": "Generated lighthouse report"
+}
