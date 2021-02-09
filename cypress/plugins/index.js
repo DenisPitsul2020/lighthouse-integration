@@ -68,11 +68,11 @@ module.exports = (on, config) => {
   })
 
   on('task', {
-    zipFile (fileData) {
+    zipFolder (fileData) {
 
       const file = new AdmZip();
 
-      file.addLocalFile(fileData.filePath);
+      file.addLocalFolder(fileData.folderPath);
       file.writeZip(fileData.zipPath);
 
       return fileData.zipPath

@@ -2,7 +2,7 @@
 
 context('Lighthouse suite', () => {
 
-    it('should generated report and sent email', (done) => {
+    it('should generated report and sent email', () => {
 
         cy.fixture('testdata').then((data) => {
 
@@ -14,11 +14,11 @@ context('Lighthouse suite', () => {
             cy.task('lighthouseReport', report, {timeout: 120000}).then((reportPath) => {
 
                 const fileData = {
-                    filePath: reportPath,
+                    folderPath: data.folderPath,
                     zipPath: data.zipPath
                 }
 
-                cy.task('zipFile', fileData).then((zipPath) => {
+                cy.task('zipFolder', fileData).then((zipPath) => {
 
                     const emailData = {
                         zipPath: zipPath,
@@ -31,7 +31,6 @@ context('Lighthouse suite', () => {
 
                     cy.task('sendEmail', emailData).then((status) => {
                         console.log("Status: ", status)
-                        done()
                     })
 
                 })

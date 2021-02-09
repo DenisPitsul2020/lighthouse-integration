@@ -1,7 +1,8 @@
 {
   "url": "https://www.google.com",
-  "reportPath": "lhreport.html",
-  "zipPath": "lhreport.zip",
+  "reportPath": "generated_reports/lhreport.html",
+  "folderPath": "generated_reports",
+  "zipPath": "lhreports.zip",
   "senderEmail": "tt2857506@gmail.com",
   "senderPassword": "testtest2857506",
   "receiverEmail": "dpitsul@solvd.com",
